@@ -1,0 +1,13 @@
+
+add_subdirectory(xbuild_cli)
+#if (XBD_PLATFORM_WINDOWS)
+#    add_subdirectory(xbuild_windrv)
+#elseif (XBD_PLATFORM_LINUX)
+#    add_subdirectory(test_linux)
+#elseif (XBD_PLATFORM_MACOS)
+#    add_subdirectory(test_macos)
+#elseif (XBD_PLATFORM_IOS)
+#    add_subdirectory(test_ios)
+#elseif (XBD_PLATFORM_ANDROID)
+#    add_subdirectory(test_android)
+#endif()
