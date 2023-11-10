@@ -3,10 +3,11 @@ include(FetchContent)
 
 #if (CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
     # Fetch xbuild-cmake prelude
+    message(STATUS "Fetching xbuild ...")
     FetchContent_Declare(
         xbuild
         GIT_REPOSITORY https://github.com/realxye/xbuild.git
-        GIT_TAG        0f57c49ada65ee6b7660902c60eddb66787501e3
+        GIT_TAG        4c5ade0725a4682c19f5c4913f9434a195b23703
     )
     FetchContent_MakeAvailable(xbuild)
 

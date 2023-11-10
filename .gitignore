@@ -6,6 +6,7 @@ output/
 build/
 build.*/
 .vscode/
+.DS_Store
 
 # Compiled Object files
 *.slo
