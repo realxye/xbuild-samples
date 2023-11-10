@@ -1,6 +1,3 @@
 
-set(TARGETNAME test_common_shared)
-add_library($(TARGETNAME))
-include(Sources.cmake)
-
-set_target_properties ($(TARGETNAME) PROPERTIES FOLDER libs)
+set(TARGETNAME xbuild_common_shared)
+xbd_add_library(${TARGETNAME} SHARED)

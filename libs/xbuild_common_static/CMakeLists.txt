@@ -1,6 +1,3 @@
 
-set(TARGETNAME test_common_static)
-add_library($(TARGETNAME))
-include(Sources.cmake)
-
-set_target_properties ($(TARGETNAME) PROPERTIES FOLDER libs)
+set(TARGETNAME xbuild_common_static)
+xbd_add_library(${TARGETNAME})

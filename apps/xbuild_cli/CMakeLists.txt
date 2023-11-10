@@ -1,6 +1,5 @@
 
 set(TARGETNAME xbuild_cli)
-add_executable($(TARGETNAME))
-include(Sources.cmake)
+xbd_add_executable(${TARGETNAME})
 
-set_target_properties ($(TARGETNAME) PROPERTIES FOLDER apps)
+set_target_properties (${TARGETNAME} PROPERTIES FOLDER apps)
