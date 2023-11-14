@@ -7,12 +7,16 @@ if (CMAKE_SOURCE_DIR STREQUAL CMAKE_CURRENT_SOURCE_DIR)
     FetchContent_Declare(
         xbuild
         GIT_REPOSITORY https://github.com/realxye/xbuild.git
-        GIT_TAG        5baa8f00b4332854f12b4b79e9c8211cc5899a7a
+        GIT_TAG        82c087811ad8754e1614cb2e394dff419274e905
     )
     FetchContent_MakeAvailable(xbuild)
+    #list(APPEND CMAKE_MODULE_PATH "${XBUILD_PRELUDE_CMAKE_DIR}")
+    #list(APPEND CMAKE_MODULE_PATH "${XBUILD_PRELUDE_PACKAGES_DIR}")
 
     # Create project
     project(xbuild-samples C CXX)
+
+    include(${XBUILD_PRELUDE_CMAKE_DIR}/xbuild-init-project.cmake)
 endif()
 
 add_subdirectory(apps)
